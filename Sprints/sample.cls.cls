@@ -42,7 +42,6 @@ private class OnBoardFormControllerExt_Test {
         // Insert Contact record with "Affiliated" record type.
         SmartFactory.overrideFieldsMap.put('Contact', new Map<String,String>{'LastName'=>'Contact', 'FirstName'=>'Test', 'RecordTypeId'=>RecordTypeCache.getRecordType('Contact','Affiliated').Id}); 
         
-        // Insert Contact with Account.
         Contact cntWithAcc = (Contact)SmartFactory.createSObject('Contact');
         cntWithAcc.AccountId = acc.id;
         cntWithAcc.Web_Submitter__c = true;
