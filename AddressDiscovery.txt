@@ -1,0 +1,60 @@
+Here are the results of your organization's customizations scan. These entries represent existing
+customizations that contain references to state or country fields. You will need to manually update
+these customizations when you enable state and country picklists for your organization. Making the
+updates ensures that your organization is using new code-based fields for states and countries,
+instead of text-based fields.
+
+This document contains tab-separated data. For best results, open the document in a spreadsheet editor.
+
+Apex Class
+	Name	Namespace	Link	Status	Api Version
+	WrapperClassController	testermst	https://ap2.salesforce.com/01p28000001zlFn	Active	34.0
+	DatabaseService	dsfs	https://ap2.salesforce.com/01p28000004FQqm	Active	33.0
+	AdminManager	dsfs	https://ap2.salesforce.com/01p28000004FQq6	Active	31.0
+	DocuSignSetupUtilities	dsfs	https://ap2.salesforce.com/01p28000004FQs8	Active	25.0
+	MyProfilePageControllerTest	testermst	https://ap2.salesforce.com/01p28000003pjAj	Active	35.0
+	MyProfilePageController	testermst	https://ap2.salesforce.com/01p28000003pjAi	Active	35.0
+	EnvelopeControllerTest	dsfs	https://ap2.salesforce.com/01p28000004FQsL	Active	31.0
+	EnvelopeController	dsfs	https://ap2.salesforce.com/01p28000004FQsK	Active	33.0
+	MixPanelService	dsfs	https://ap2.salesforce.com/01p28000004FQsX	Active	31.0
+	PlatformMixPanelServiceTest	dsfs	https://ap2.salesforce.com/01p28000004FQsa	Active	28.0
+
+Visualforce Page
+	Name	Namespace	Link	Api Version
+	WrapperPage	testermst	https://ap2.salesforce.com/06628000001P6m2	34.0
+	MyProfilePage	testermst	https://ap2.salesforce.com/06628000002mXpZ	35.0
+
+No matching Apex Trigger customizations were found.
+
+Assignment Rule
+	Name	Namespace	Link	Entity	Active
+	Standard	testermst	https://ap2.salesforce.com/setup/own/entityruledetail.jsp?id=01Q28000000KpWf	Lead	Yes
+
+No matching Auto-Response Rule customizations were found.
+
+No matching Email Template customizations were found.
+
+Escalation Rule
+	Name	Namespace	Link	Active
+	Standard	testermst	https://ap2.salesforce.com/setup/own/entityruledetail.jsp?id=01Q28000000KpWe	No
+
+No matching Field Set customizations were found.
+
+List View
+	Name	Namespace	Link	List View Type
+	Platinum and Gold SLA Customers	testermst	https://ap2.salesforce.com/001?fcf=00B28000002SIiQ	Account
+	View - Custom 2	testermst	https://ap2.salesforce.com/00Q?fcf=00B28000002SIiO	Lead
+	View - Custom 1	testermst	https://ap2.salesforce.com/00Q?fcf=00B28000002SIiP	Lead
+
+No matching Report customizations were found.
+
+No matching Entitlement Process customizations were found.
+
+No matching Validation Rule customizations were found.
+
+No matching Custom Button or Link customizations were found.
+
+No matching Workflow Rule customizations were found.
+
+No matching Matching Rule customizations were found.
+
