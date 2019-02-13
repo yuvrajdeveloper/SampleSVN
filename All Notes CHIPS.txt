@@ -1,0 +1,57 @@
+Opportunity
+	OpportunityLineItem
+	
+Quote
+	QuoteLineItem
+	
+=====
+
+Select Id, Quote.Project_c FROM quoteLineItem
+
+Select Id, OpportunityID FROM OpportunityLineItem
+
+SELECT Id, Name, SobjectTYPE FROM RecordType WHERE ID = '0121N000001hUDbQAM' AND NAME = 'Quote'
+
+====
+SELECT Id, Account.Name,Is_Budgetary__c, Contact.Name,ModelN_Quote_Number__c FROM Quote WHERE ID = '0Q0g0000000sxyzCAA'
+
+Quote newQuote = new Quote(Name = 'Test', Purchasing_Customer__c = '001g000001zYbEkAAK', ContactId='003g000001o8b5ZAAQ', OpportunityId = '006g000000IBsyaAAD',ModelN_Quote_Number__c='3254',Is_Budgetary__c=True,Pricebook2Id='01so0000001MVqFAAW' );
+insert newQuote;
+
+===========================
+SELECT Id, Name FROM Product2 WHERE LastModifiedDate = Today
+SELECT Id, Name FROM Product2 WHERE CreatedDate = Today
+SELECT IsActive, SobjectType, Name, Id FROM RecordType WHERE SObjectType = 'Quote' AND Name = 'ReadOnly'
+
+
+SELECT Id, Name, QuoteNumber, Integration_Status__c, ModelN_Quote_Number__c, ModelN_Quote_OID__c, Synced_to_ModelN__c, Integration_Update_Description__c FROM Quote WHERE lastModifiedDate = TODAY AND Id = '0Q00U0000004roESAQ'
+
+SELECT Id, OpportunityLineItemId, Workflow_status__c, Rejected__c, PricebookEntryId, QuoteId, UnitPrice, Quantity, Integration_Status__c, Integration_Update_DateTime__c, Integration_Update_Description__c, Justification_Description_Others__c, Justification__c FROM QuoteLineItem WHERE QuoteId = '0Q00U0000004roESAQ'
+
+
+===================================
+
+CompassIDE --> 00D0U00000096rX
+CompassQA  --> 00Dg0000006I1d3 
+CompassUAT -->00Dg0000006I20g 
+
+-----------------------------------------
+we cannot change the data type. 
+Support team also cannot change the data type.
+
+Sravani:
+
+Refer this article shared by shravani.
+
+https://help.salesforce.com/articleView?id=000180781&type=1
+
+======================================
+Integeration Update format
+
+<urn:sObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuoteLineItem">
+	<!--Zero or more repetitions:-->
+		<urn1:Id>0QLg00000015MOaGAM</urn1:Id>
+		<Approved_Price__c>312.518</Approved_Price__c>
+		<Workflow_Status__c>Complete</Workflow_Status__c>
+		<Rejected__c>False</Rejected__c>
+</urn:sObjects>
